@@ -3,16 +3,6 @@ with open('two_cities_ascii.txt') as f:
     fin_mic=fin.lower()
     lexeis=fin_mic.split()
     
-    def syxnotita(lista,j):
-        #syxno=max(set(lista), key=lista.count)
-        print(j,max(set(lista), key=lista.count))
-        i=0
-        while i<len(lista):
-            if lista[i]==max(set(lista), key=lista.count):
-                lista.remove(max(set(lista), key=lista.count))
-            i+=1
-    
-    
     print('Οι 10 δημοφιλέστερες λέξεις είναι: ')
     for j in range (1,11):
         print(j,max(set(lexeis), key=lexeis.count))
